@@ -1,5 +1,6 @@
 package narif.poc.designpatterns.factory.abstractfactory;
 
+import narif.poc.designpatterns.factory.abstractfactory.pizza.*;
 import narif.poc.designpatterns.factory.pizza.PizzaType;
 
 public class ChicagoPizzaStore extends PizzaStore{

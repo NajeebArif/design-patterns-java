@@ -1,5 +1,7 @@
-package narif.poc.designpatterns.factory.abstractfactory;
+package narif.poc.designpatterns.factory.abstractfactory.pizza;
 
+
+import narif.poc.designpatterns.factory.abstractfactory.PizzaIngredientFactory;
 
 public class VeggiePizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;

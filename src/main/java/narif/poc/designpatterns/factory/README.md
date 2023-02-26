@@ -9,7 +9,7 @@
 ### Abstract Factory Pattern: provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 - Here instead of directly defining the factory method inside the creator, an interface is created. This interface contains different Factory Methods to create families of related objects.
-- Then concrete implementation for this interface is provided and the implementation of the Factory Methods present in this interface follows the Factory Method Pattern. 
+- Then concrete implementations for this interface is provided and these implementations of the Factory Methods present in this interface follows the Factory Method Pattern. 
 - The client is written against the Abstract Factory interface and then composed with concrete implementation at runtime. Client then delegates the instantiation to one of the methods of Abstract Factory interface.
 
 ### Design Principle:

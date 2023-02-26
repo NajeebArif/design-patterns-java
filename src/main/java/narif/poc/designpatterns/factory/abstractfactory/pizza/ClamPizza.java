@@ -1,10 +1,11 @@
-package narif.poc.designpatterns.factory.abstractfactory;
+package narif.poc.designpatterns.factory.abstractfactory.pizza;
 
-public class CheesePizza extends Pizza{
+import narif.poc.designpatterns.factory.abstractfactory.PizzaIngredientFactory;
 
+public class ClamPizza extends Pizza{
     private final PizzaIngredientFactory pizzaIngredientFactory;
 
-    public CheesePizza(PizzaIngredientFactory pizzaIngredientFactory) {
+    public ClamPizza(PizzaIngredientFactory pizzaIngredientFactory) {
         this.pizzaIngredientFactory = pizzaIngredientFactory;
     }
 
@@ -14,5 +15,6 @@ public class CheesePizza extends Pizza{
         dough = pizzaIngredientFactory.createDough();
         sauce = pizzaIngredientFactory.createSauce();
         cheese = pizzaIngredientFactory.createCheese();
+        clam = pizzaIngredientFactory.createClams();
     }
 }

@@ -1,5 +1,6 @@
 package narif.poc.designpatterns.factory.abstractfactory;
 
+import narif.poc.designpatterns.factory.abstractfactory.pizza.Pizza;
 import narif.poc.designpatterns.factory.pizza.PizzaType;
 
 public abstract class PizzaStore {

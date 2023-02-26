@@ -6,7 +6,7 @@
 
 ### Design Principles
 
-- Strive for Loose coupled designs between objects interact
+- Strive for Loosely coupled designs between objects that interact
   - Consider an example of tightly woven basket, more stiffness makes it easier to break instead of a loosely woven, flexible basket.
   - Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimise the interdependency between objects
 

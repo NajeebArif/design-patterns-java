@@ -1,4 +1,4 @@
-package narif.poc.designpatterns.factory.abstractfactory;
+package narif.poc.designpatterns.factory.abstractfactory.pizza;
 
 import narif.poc.designpatterns.factory.abstractfactory.ingredients.*;
 
@@ -13,15 +13,15 @@ public abstract class Pizza {
 
     public abstract void prepare();
 
-    void bake() {
+    public void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
 
-    void cut() {
+    public void cut() {
         System.out.println("Cutting the pizza into diagonal slices");
     }
 
-    void box() {
+    public void box() {
         System.out.println("Place pizza in official PizzaStore box");
     }
 
