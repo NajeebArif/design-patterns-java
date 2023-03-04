@@ -1,9 +1,9 @@
-package narif.poc.designpatterns.command;
+package narif.poc.designpatterns.command.simple;
 
-import narif.poc.designpatterns.command.impl.LightOffCommand;
-import narif.poc.designpatterns.command.impl.LightOnCommand;
-import narif.poc.designpatterns.command.impl.StereoOffCommand;
-import narif.poc.designpatterns.command.impl.StereoOnWithCd;
+import narif.poc.designpatterns.command.simple.impl.LightOffCommand;
+import narif.poc.designpatterns.command.simple.impl.LightOnCommand;
+import narif.poc.designpatterns.command.simple.impl.StereoOffCommand;
+import narif.poc.designpatterns.command.simple.impl.StereoOnWithCd;
 
 public class RemoteControlClient {
     public static void main(String[] args) {

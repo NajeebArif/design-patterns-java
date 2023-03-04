@@ -1,7 +1,7 @@
-package narif.poc.designpatterns.command.impl;
+package narif.poc.designpatterns.command.simple.impl;
 
-import narif.poc.designpatterns.command.Command;
-import narif.poc.designpatterns.command.Stereo;
+import narif.poc.designpatterns.command.simple.Command;
+import narif.poc.designpatterns.command.simple.Stereo;
 
 public class StereoOnWithCd implements Command {
     private final Stereo stereo;

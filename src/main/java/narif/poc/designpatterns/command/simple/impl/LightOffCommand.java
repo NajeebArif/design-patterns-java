@@ -1,7 +1,7 @@
-package narif.poc.designpatterns.command.impl;
+package narif.poc.designpatterns.command.simple.impl;
 
-import narif.poc.designpatterns.command.Command;
-import narif.poc.designpatterns.command.Light;
+import narif.poc.designpatterns.command.simple.Command;
+import narif.poc.designpatterns.command.simple.Light;
 
 public class LightOffCommand implements Command {
 

@@ -1,6 +1,6 @@
-package narif.poc.designpatterns.command;
+package narif.poc.designpatterns.command.simple;
 
-import narif.poc.designpatterns.command.impl.NoCommand;
+import narif.poc.designpatterns.command.simple.impl.NoCommand;
 
 import java.util.ArrayList;
 import java.util.Arrays;
