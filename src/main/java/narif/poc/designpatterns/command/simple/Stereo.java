@@ -1,5 +1,8 @@
 package narif.poc.designpatterns.command.simple;
 
+/**
+ * RECEIVER, entity which knows how to perform an action.
+ */
 public class Stereo {
     String location;
 

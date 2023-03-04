@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
+/**
+ * INVOKER, an objects which is composed of commands and simply calls the commands' execute method.
+ * Does not care how any operation will be carried out, it just knows how to invoke the command's execute
+ * method when needed.
+ */
 public class RemoteControl {
 
     List<Command> onCommands;
