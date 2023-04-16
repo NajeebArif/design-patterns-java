@@ -40,6 +40,10 @@
     - or return 1 if this is greater than the target object 
     - or return 0 if both are equal
     - Send the arrays of elements to Arrays.sort() to sort them, this internally uses `java.util.DualPivotQuickSort.sort()`.
+  - This implementation of sorting may look like an implementation of strategy pattern but it is not.
+    - You're probably thinking that because Strategy pattern uses object composition. You're right in a way - we are using Arrays object to sort our array, so that's similar to Strategy. But remember, in Strategy, the class you compose with _implements the entire algorithm_. The algorithm that Arrays implements for `sort()` is incomplete; it needs a class to fill in the missing `compareTo()` method. So, in that way, it is more like Template Method.
+  - Other example in java library is `java.io` has `read()` method in `InputStream` that subclasses must implement and is used by template method `read(byte b[], int off, int len)`.
+  - Custom Lists with `AbstractList`
 
 ---
 
