@@ -6,10 +6,12 @@ public class Waitress {
 
     private final Menu pancakeHouseMenu;
     private final Menu dinerMenu;
+    private final Menu cafeMenu;
 
-    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
+    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
+        this.cafeMenu = cafeMenu;
     }
 
     public void printMenu(){
@@ -17,6 +19,7 @@ public class Waitress {
         printMenu(iterator1);
         final var iterator = dinerMenu.createIterator();
         printMenu(iterator);
+        printMenu(cafeMenu.createIterator());
     }
 
     private void printMenu(Iterator<MenuItem> iterator){
