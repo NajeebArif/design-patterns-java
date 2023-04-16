@@ -1,6 +1,8 @@
 package narif.poc.designpatterns.iterator;
 
-public class DinerMenuIterator implements Iterator {
+import java.util.Iterator;
+
+public class DinerMenuIterator implements Iterator<MenuItem> {
     private final MenuItem[] items;
     private int position = 0;
 
@@ -20,5 +22,10 @@ public class DinerMenuIterator implements Iterator {
         final var item = items[position];
         position++;
         return item;
+    }
+
+    @Override
+    public void remove() {
+        throw new UnsupportedOperationException("You should not be trying to remove menu items.");
     }
 }

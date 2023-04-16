@@ -2,6 +2,7 @@ package narif.poc.designpatterns.iterator;
 
 import java.util.List;
 
+@Deprecated
 public class PancakeHouseIterator implements Iterator{
 
     private final List<MenuItem> items;

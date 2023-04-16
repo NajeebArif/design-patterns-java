@@ -1,6 +1,7 @@
 package narif.poc.designpatterns.iterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Waitress {
 
@@ -19,7 +20,7 @@ public class Waitress {
         printMenu(iterator);
     }
 
-    private void printMenu(Iterator iterator){
+    private void printMenu(Iterator<MenuItem> iterator){
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
