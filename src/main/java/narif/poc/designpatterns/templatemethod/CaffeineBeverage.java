@@ -11,11 +11,11 @@ public abstract class CaffeineBeverage {
 
     protected abstract void addCondiments();
 
+    protected abstract void brew();
+
     private void pourInCup() {
         System.out.println("Pouring into cup");
     }
-
-    protected abstract void brew();
 
     private void biolWater() {
         System.out.println("Boiling Water.");
