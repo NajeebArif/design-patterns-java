@@ -13,16 +13,15 @@ public class Waitress {
     }
 
     public void printMenu(){
-        final var menuItems = pancakeHouseMenu.getMenuItems();
-        for (int i = 0; i < menuItems.size(); i++) {
-            final var menuItem = menuItems.get(i);
-            System.out.println(menuItem);
-        }
+        final var iterator1 = pancakeHouseMenu.createIterator();
+        printMenu(iterator1);
+        final var iterator = dinerMenu.createIterator();
+        printMenu(iterator);
+    }
 
-        final var menuItems1 = dinerMenu.getMenuItems();
-        for (int i = 0; i < menuItems1.length; i++) {
-            final var menuItem = menuItems1[i];
-            System.out.println(menuItem);
+    private void printMenu(Iterator iterator){
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
         }
     }
 }
