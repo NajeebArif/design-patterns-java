@@ -32,3 +32,19 @@
   - a hook may provide a way for a subclass to implement an optional part of an algorithm, or if it is not important for the subclass's implementation.
   - give subclass a chance to react to some step in the template method that is about to happen or just happened.
 - Keep abstract methods small in numbers, otherwise it will be a bog job to implement them in subclass.
+- Real world examples: 
+  - Using comparators to sort do the sorting
+    - Implement the `Comparable` interface
+    - Override the `compareTo()` method
+    - In `compareTo()` return -1 if this is less than the passed object 
+    - or return 1 if this is greater than the target object 
+    - or return 0 if both are equal
+    - Send the arrays of elements to Arrays.sort() to sort them, this internally uses `java.util.DualPivotQuickSort.sort()`.
+
+---
+
+| Pattern | What it does |
+| ---|---|
+|Template Method| Subclasses decide how to implement steps in an algorithm|
+| Strategy| Encapsulates interchangeable behaviors and use delegation to decide which behavior to use|
+|Factory Method| Subclasses decide which concrete classes to instantiate|
