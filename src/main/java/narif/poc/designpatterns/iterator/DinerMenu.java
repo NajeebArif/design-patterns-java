@@ -1,6 +1,8 @@
 package narif.poc.designpatterns.iterator;
+
 import java.util.Iterator;
-public class DinerMenu {
+
+public class DinerMenu implements Menu{
 
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
@@ -26,8 +28,7 @@ public class DinerMenu {
     }
 
     public void addItem(String name, String description,
-                        boolean vegetarian, double price)
-    {
+                        boolean vegetarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         if (numberOfItems >= MAX_ITEMS) {
             System.err.println("Sorry, menu is full!  Can't add item to menu");
@@ -37,6 +38,7 @@ public class DinerMenu {
         }
     }
 
+    @Override
     public Iterator<MenuItem> createIterator() {
         return new DinerMenuIterator(menuItems);
     }

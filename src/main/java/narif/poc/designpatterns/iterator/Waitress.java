@@ -1,14 +1,13 @@
 package narif.poc.designpatterns.iterator;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Waitress {
 
-    private final PancakeHouseMenu pancakeHouseMenu;
-    private final DinerMenu dinerMenu;
+    private final Menu pancakeHouseMenu;
+    private final Menu dinerMenu;
 
-    public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
     }

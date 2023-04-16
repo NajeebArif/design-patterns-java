@@ -3,7 +3,7 @@ package narif.poc.designpatterns.iterator;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
 
     ArrayList<MenuItem> menuItems;
 
@@ -38,6 +38,7 @@ public class PancakeHouseMenu {
         menuItems.add(menuItem);
     }
 
+    @Override
     public Iterator<MenuItem> createIterator(){
         return menuItems.iterator();
     }
